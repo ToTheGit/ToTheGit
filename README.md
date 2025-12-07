@@ -1,13 +1,9 @@
 ## Hi there 👋
 
----
-
 # 👨🏻‍💻 Wonshik Nam | AI & Backend & Data Engineer
 
 
-
----
-## 1. Career
+## Career
 
 ### ㈜ SuitdiO (CTO/이사) | 2024.10 – 2025.12
 
@@ -17,9 +13,8 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
 - **실시간 협업 환경 구축:** Websocket 및 Redis Pub/Sub 매커니즘 기반 **실시간 협업 편집 및 트랜잭션 관리 시스템** 구축
 - **운영 및 인프라 총괄:** AWS ECS 기반의 Auto Scaling, GitActions CI/CD 파이프라인, PostgreSQL 및 Redis **AWS 프로덕션 환경 운영**
 
----
 
-## 2. Core Projects 
+## Core Projects 
 
 ### 🚀 LLM Framework 기반 AI Agent 개발
 
@@ -34,9 +29,8 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
 - **Multi-turn Chat Streaming:**
   - **SSE 기반의 Multi-turn Chat 기능**을 구현하여 ChatGPT, Gemini, Claude, Grok, Perplexity 등 **다중 모델을 지원**하고 실시간 응답 환경 제공
   
----
 
-## 3. 기술 스택 (Tech Stack)
+## Tech Stack
 
 ### 💻 BackEnd/AI
 
