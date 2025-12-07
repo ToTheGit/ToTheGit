@@ -2,9 +2,12 @@
 
 ---
 
-# 👨🏻‍💻 Wonshik Nam | AI Agent & Backend Developer
+# 👨🏻‍💻 Wonshik Nam | AI & Backend & Data Engineer
 
-## 1. 경력 (Career Experience)
+
+
+---
+## 1. Career
 
 ### ㈜ SuitdiO (CTO/이사) | 2024.10 – 2025.12
 
@@ -16,7 +19,7 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
 
 ---
 
-## 2. 주요 프로젝트 및 포트폴리오 (Core Projects & Portfolio)
+## 2. Core Projects 
 
 ### 🚀 LLM Framework 기반 AI Agent 개발
 
