@@ -2,7 +2,6 @@
 
 # 👨🏻‍💻 Wonshik Nam | AI & Backend & Data Engineer
 
-
 ## Career
 
 ### ㈜ SuitdiO (CTO/이사) | 2024.10 – 2025.12
@@ -13,8 +12,35 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
 - **실시간 협업 환경 구축:** Websocket 및 Redis Pub/Sub 매커니즘 기반 **실시간 협업 편집 및 트랜잭션 관리 시스템** 구축
 - **운영 및 인프라 총괄:** AWS ECS 기반의 Auto Scaling, GitActions CI/CD 파이프라인, PostgreSQL 및 Redis **AWS 프로덕션 환경 운영**
 
+## Core Projects
 
-## Core Projects 
+### 💻 Backend 시스템 아키텍처 설계 및 구축
+
+- **트랜잭션 원자성 및 동시성 제어:**
+  - PostgreSQL ACID 특성 활용한 트랜잭션 원자성 보장 및 All-or-Nothing 처리 구현.
+  - Python asyncio.Lock과 SELECT FOR UPDATE 조합하여 Race Condition 발생률 0% 달성.
+  - READ COMMITTED 격리 수준으로 Dirty Read 방지 및 동시성 균형 유지.
+- **Bulk Processing 및 성능 최적화:**
+  - PostgreSQL VALUES 절 활용한 벌크 연산으로 DB 왕복 횟수 60% 감소.
+  - Incremental Update 시스템으로 중복 연산 40% 감소 및 100개 데이터 동시 업데이트 시 처리 시간 80% 개선.
+- **실시간 협업 시스템:**
+  - WebSocket 및 Redis Pub/Sub 기반 실시간 브로드캐스팅 메커니즘 구축.
+  - 실시간 메시지 전파 지연시간 50ms 이내 유지 및 데이터 동기화 100% 보장.
+- **계층적 자료구조 알고리즘:**
+  - DFS 기반 순환 감지 알고리즘 구현으로 O(V+E) 시간복잡도 달성 및 10000개 노드 1초 이내 처리.
+  - BFS 기반 계층 구조 최적화로 메모리 효율성 극대화 및 불필요한 연산 제거.
+
+### ☁️ AWS Cloud Infrastructure 설계 및 DevOps
+
+- **서버리스 컨테이너 인프라:**
+  - ECS Fargate 및 Application Load Balancer 기반 Auto Scaling 구축으로 CPU 70% 이상 시 자동 확장.
+- **글로벌 CDN 및 스토리지:**
+  - CloudFront로 56개국 글로벌 트래픽 처리 및 Edge Location 기반 정적 자산 캐싱.
+- **CI/CD 파이프라인:**
+  - GitHub Actions 기반 완전 자동화 배포 파이프라인 구축 및 배포 시간 83% 단축.
+  - Multi-stage Docker Build로 이미지 크기 60% 감소 및 Rolling Update 전략으로 무중단 배포 구현.
+- **모니터링 및 운영:**
+  - CloudWatch 통합 모니터링 대시보드 구축 및 시스템 가용성 99.95% 달성.
 
 ### 🚀 LLM Framework 기반 AI Agent 개발
 
@@ -28,7 +54,6 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
   - AI Agent가 **Excel, Block Markdown 편집, Code Interpreter 기반 Chart 및 Diagram 시각화, 웹 검색(Web Search)** 등 복잡한 도구 호출을 수행할 수 있는 로직 통합
 - **Multi-turn Chat Streaming:**
   - **SSE 기반의 Multi-turn Chat 기능**을 구현하여 ChatGPT, Gemini, Claude, Grok, Perplexity 등 **다중 모델을 지원**하고 실시간 응답 환경 제공
-  
 
 ## Tech Stack
 
@@ -53,13 +78,14 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
 [![NGINX](https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white)](https://www.nginx.com/)[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
 [![ECS](https://img.shields.io/badge/ECS-FF9900?style=for-the-badge&logo=amazon-ecs&logoColor=white)](https://aws.amazon.com/ecs/)[![EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)](https://aws.amazon.com/ec2/)[![VPC](https://img.shields.io/badge/VPC-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/vpc/)[![CloudFront](https://img.shields.io/badge/CloudFront-FF4500?style=for-the-badge&logo=amazon-cloudfront&logoColor=white)](https://aws.amazon.com/cloudfront/)[![S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)](https://aws.amazon.com/s3/)[![Load Balancer](https://img.shields.io/badge/Load_Balancer-8C4FFF?style=for-the-badge&logo=awselasticloadbalancing&logoColor=white)](https://aws.amazon.com/elasticloadbalancing/)
-[![RDS](https://img.shields.io/badge/RDS-527FFF?style=for-the-badge&logo=amazon-rds&logoColor=white)](https://aws.amazon.com/rds/)[![ElastiCache](https://img.shields.io/badge/ElastiCache-C925D1?style=for-the-badge&logo=amazonelasticache&logoColor=white)](https://aws.amazon.com/elasticache/)[![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white)](https://aws.amazon.com/cloudwatch/)[![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)](https://aws.amazon.com/lambda/)
+
+[![RDS](https://img.shields.io/badge/RDS-527FFF?style=for-the-badge&logo=amazon-rds&logoColor=white)](https://aws.amazon.com/rds/)[![ElastiCache](https://img.shields.io/badge/ElastiCache-C925D1?style=for-the-badge&logo=amazonelasticache&logoColor=white)](https://aws.amazon.com/elasticache/)[![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=for-the-badge&logo=amazoncloudwatch&logoColor=white)](https://aws.amazon.com/cloudwatch/)
 
 ### 💾 Database&VectorStore
 
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
 
-[![PGVector](https://img.shields.io/badge/PGVector-4169E1?style=for-the-badge&logoColor=white)](https://github.com/pgvector/pgvector)[![Turbopuffer](https://img.shields.io/badge/Turbopuffer-000000?style=for-the-badge&logoColor=white)](https://turbopuffer.com/)
+[![PGVector](https://img.shields.io/badge/PGVector-4169E1?style=for-the-badge&logoColor=white)](https://github.com/pgvector/pgvector)
 
 ### 🔄 CI/CD
 
