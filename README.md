@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-# 👨🏻‍💻 Wonshik Nam | AI & Backend & Data Engineer
+# 👨🏻‍💻 Wonshik Nam | Backend / AI / Cloud Engineer
 
 ## Career
 
