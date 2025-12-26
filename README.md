@@ -33,7 +33,7 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
 ### ☁️ AWS Cloud Infrastructure 설계 및 DevOps
 
 - **서버리스 컨테이너 인프라:**
-  - ECS Fargate 및 Application Load Balancer 기반 Auto Scaling 구축으로 CPU 70% 이상 시 자동 확장.
+  - ECS Fargate 및 Application Load Balancer 기반 Auto Scaling 구축으로 CPU 70% 이상 시 자동 확장 적용.
 - **글로벌 CDN 및 스토리지:**
   - CloudFront로 56개국 글로벌 트래픽 처리 및 Edge Location 기반 정적 자산 캐싱.
 - **CI/CD 파이프라인:**
@@ -49,9 +49,9 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
   - **사용자 정의 규칙을 ChatState에 추가**하여 장기 기억 및 지침 목록을 관리하는 Context Engineering 기능을 구현하여 AI의 일관성과 추론 품질을 극대화
 - **멀티모달 RAG 및 전처리:**
   - **Excel, PDF, YouTube, WebLink, Image, Markdown 등 다양한 형태의 멀티모달 데이터 Import 기능 구현**
-  - `PGVector` 기반의 RAG(검색 증강 생성) 시스템을 구축
+  - `PGVector` 기반의 RAG 시스템 구축
 - **Tool Calling 및 Code Interpreter 구현:**
-  - AI Agent가 **Excel, Block Markdown 편집, Code Interpreter 기반 Chart 및 Diagram 시각화, 웹 검색(Web Search)** 등 복잡한 도구 호출을 수행할 수 있는 로직 통합
+  - AI Agent가 **Excel, Block Markdown 편집, Code Interpreter 기반 Chart 및 Diagram 시각화, Web Search** 등 복잡한 도구 호출을 수행할 수 있는 로직 통합
 - **Multi-turn Chat Streaming:**
   - **SSE 기반의 Multi-turn Chat 기능**을 구현하여 ChatGPT, Gemini, Claude, Grok, Perplexity 등 **다중 모델을 지원**하고 실시간 응답 환경 제공
 
