@@ -6,7 +6,7 @@
 
 ### ㈜ SuitdiO (CTO/이사) | 2025.05 – 2025.12
 
-LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
+LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄. [ChangeLog](https://feedback.suitdio.com/ko/changelog)
 
 - **핵심 성과:** 개발한 **AI Agent 및 백엔드 기술을 타 기업과 전문기술도입계약 체결**
 - **실시간 협업 환경 구축:** Websocket 및 Redis Pub/Sub 매커니즘 기반 **실시간 협업 편집 및 트랜잭션 관리 시스템** 구축
