@@ -4,7 +4,7 @@
 
 ## Career
 
-### <img width="16" height="16" src="https://github.com/user-attachments/assets/64a38f54-f7ed-4e08-bc5f-25f5b6db5dc7" /> ㈜ SuitdiO (CTO/이사) | 2025.05 – 2025.12
+### <img width="24" height="24" src="https://github.com/user-attachments/assets/64a38f54-f7ed-4e08-bc5f-25f5b6db5dc7" /> ㈜ SuitdiO (CTO/이사) | 2025.05 – 2025.12
 
 LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄. [ChangeLog](https://feedback.suitdio.com/ko/changelog)
 
