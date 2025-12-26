@@ -4,7 +4,7 @@
 
 ## Career
 
-### ㈜ SuitdiO (CTO/이사) | 2024.10 – 2025.12
+### ㈜ SuitdiO (CTO/이사) | 2025.05 – 2025.12
 
 LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄.
 
