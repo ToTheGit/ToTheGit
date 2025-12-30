@@ -4,7 +4,7 @@
 
 ## Career
 
-### <img width="24" height="24" src="https://github.com/user-attachments/assets/64a38f54-f7ed-4e08-bc5f-25f5b6db5dc7" /> ㈜ SuitdiO (CTO/이사) | 2025.05 – 2025.12 (폐업)
+### <img width="24" height="24" src="https://github.com/user-attachments/assets/64a38f54-f7ed-4e08-bc5f-25f5b6db5dc7" /> ㈜ SuitdiO (공동창업자/CTO) & 유연한뱁새 | 2023.12 – 2025.12 (폐업)
 
 AI Agent(LLM) & Backend & Infra 총괄. [ChangeLog](https://feedback.suitdio.com/ko/changelog)
 
