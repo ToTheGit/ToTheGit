@@ -4,12 +4,17 @@
 
 ## Career
 
-### <img width="24" height="24" src="https://github.com/user-attachments/assets/64a38f54-f7ed-4e08-bc5f-25f5b6db5dc7" /> ㈜ SuitdiO (CTO/이사) | 2025.05 – 2025.12
+### <img width="24" height="24" src="https://github.com/user-attachments/assets/64a38f54-f7ed-4e08-bc5f-25f5b6db5dc7" /> ㈜ SuitdiO (CTO/이사) | 2025.05 – 2025.12 (폐업)
 
-LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄. [ChangeLog](https://feedback.suitdio.com/ko/changelog)
+AI Agent(LLM) & Backend & Infra 총괄. [ChangeLog](https://feedback.suitdio.com/ko/changelog)
 
-- **핵심 성과:** 개발한 **AI Agent 및 백엔드 기술을 타 기업과 전문기술도입계약 체결**
-- **실시간 협업 환경 구축:** Websocket 및 Redis Pub/Sub 매커니즘 기반 **실시간 협업 편집 및 트랜잭션 관리 시스템** 구축
+- **핵심 성과:**
+1. AI Agent 원천 기술의 우수성을 바탕으로 기업 대상 전문 기술도입계약(Licensing) 체결
+2. 신용보증기금 기술 평가를 통한 Easy-Start 2억(우대금리 2.9%) 규모 자금 유치
+3. 매출 2200만원 달성, 56개국 접속 트래픽 처리
+4. LLM·Embedding 기반 약물 부작용 연구로 국제 SCI 저널 논문 등재
+5. 2024 성남시 청년창업지원사업 선정
+- **실시간 협업 환경 구축:** WebSocket, SSE 통신 및 Redis Pub/Sub(Message Queue의 메시징 패턴) 기반 무한 캔버스 환경에서의 **실시간 편집 및 트랜잭션 관리 시스템** 구축.
 - **운영 및 인프라 총괄:** AWS ECS 기반의 Auto Scaling, GitActions CI/CD 파이프라인, PostgreSQL 및 Redis **AWS 프로덕션 환경 운영**
 
 ## Core Projects
@@ -21,10 +26,10 @@ LLM 기반 AI Agent & 백엔드 시스템 & Infra 총괄. [ChangeLog](https://fe
   - Python asyncio.Lock과 SELECT FOR UPDATE 조합하여 Race Condition 발생률 0% 달성.
   - READ COMMITTED 격리 수준으로 Dirty Read 방지 및 동시성 균형 유지.
 - **Bulk Processing 및 성능 최적화:**
-  - PostgreSQL VALUES 절 활용한 벌크 연산으로 DB 왕복 횟수 60% 감소.
-  - Incremental Update 시스템으로 중복 연산 40% 감소 및 100개 데이터 동시 업데이트 시 처리 시간 80% 개선.
+  - PostgreSQL VALUES 절 활용한 벌크 연산으로 DB 처리 시간 82% 개선.
+  - Incremental Update 시스템으로 중복 연산 40% 감소.
 - **실시간 협업 시스템:**
-  - WebSocket 및 Redis Pub/Sub 기반 실시간 브로드캐스팅 메커니즘 구축.
+  - WebSocket, SSE 통신 및 Redis Pub/Sub(Message Queue의 메시징 패턴) 기반 실시간 편집 시스템 구축.
   - 실시간 메시지 전파 지연시간 50ms 이내 유지 및 데이터 동기화 100% 보장.
 - **계층적 자료구조 알고리즘:**
   - DFS 기반 순환 감지 알고리즘 구현으로 O(V+E) 시간복잡도 달성 및 10000개 노드 1초 이내 처리.
