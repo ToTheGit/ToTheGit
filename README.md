@@ -23,13 +23,12 @@ AI Agent(LLM) & Backend & Infra 총괄. [ChangeLog](https://feedback.suitdio.com
 
 - **트랜잭션 원자성 및 동시성 제어:**
   - PostgreSQL ACID 특성 활용한 트랜잭션 원자성 보장 및 All-or-Nothing 처리 구현.
-  - Python asyncio.Lock과 SELECT FOR UPDATE 조합하여 Race Condition 발생률 0% 달성.
-  - READ COMMITTED 격리 수준으로 Dirty Read 방지 및 동시성 균형 유지.
+  - Python asyncio.Lock과 SELECT FOR UPDATE 조합하여 Race Condition 발생 최소화.
 - **Bulk Processing 및 성능 최적화:**
-  - PostgreSQL VALUES 절 활용한 벌크 연산으로 DB 처리 시간 82% 개선.
+  - PostgreSQL VALUES 절 활용한 벌크 연산으로 DB I/O 60% 개선.
   - Incremental Update 시스템으로 중복 연산 40% 감소.
 - **실시간 협업 시스템:**
-  - WebSocket, SSE 통신 및 Redis Pub/Sub(Message Queue의 메시징 패턴) 기반 실시간 편집 시스템 구축.
+  - WebSocket, SSE 통신 및 Redis Pub/Sub(Message Queue) 기반 실시간 편집 시스템 구축.
   - 실시간 메시지 전파 지연시간 50ms 이내 유지 및 데이터 동기화 100% 보장.
 - **계층적 자료구조 알고리즘:**
   - DFS 기반 순환 감지 알고리즘 구현으로 O(V+E) 시간복잡도 달성 및 10000개 노드 1초 이내 처리.
@@ -47,16 +46,14 @@ AI Agent(LLM) & Backend & Infra 총괄. [ChangeLog](https://feedback.suitdio.com
 - **모니터링 및 운영:**
   - CloudWatch 통합 모니터링 대시보드 구축 및 시스템 가용성 99.95% 달성.
 
-### 🚀 LLM Framework 기반 AI Agent 개발
+### 🚀 AI Agent 및 RAG 시스템 연구개발
 
-- **Context Engineering:**
-  - `LangChain`, `LangGraph`를 활용하여 복잡도 높은 상태 전이 로직 설계.
-  - **사용자 정의 규칙을 ChatState에 추가**하여 장기 기억 및 지침 목록을 관리하는 Context Engineering 기능을 구현하여 AI의 일관성과 추론 품질을 극대화
+- **Multi-Agent Orchestration 시스템 구축:**
+  - AI Agent가 **Excel, text edit, Code Interpreter 기반 Chart 및 Diagram 시각화, Web Search** 등 복잡한 업무를 수행할 수 있는 로직 통합
+  - 장기 기억 및 지침 목록을 관리하는 Context Engineering 기능을 구현하여 AI의 일관성과 추론 품질을 극대화
 - **멀티모달 RAG 및 전처리:**
   - **Excel, PDF, YouTube, WebLink, Image, Markdown 등 다양한 형태의 멀티모달 데이터 Import 기능 구현**
-  - `PGVector` 기반의 RAG 시스템 구축
-- **Tool Calling 및 Code Interpreter 구현:**
-  - AI Agent가 **Excel, Block Markdown 편집, Code Interpreter 기반 Chart 및 Diagram 시각화, Web Search** 등 복잡한 도구 호출을 수행할 수 있는 로직 통합
+  - RAG 데이터 품질 최적화: 입력소스들의 인식률을 높이기 위해 독자 전처리 시스템을 구축.
 - **Multi-turn Chat Streaming:**
   - **SSE 기반의 Multi-turn Chat 기능**을 구현하여 ChatGPT, Gemini, Claude, Grok, Perplexity 등 **다중 모델을 지원**하고 실시간 응답 환경 제공
 
